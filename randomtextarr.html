@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        #btn{
+            font-size: 100px;
+        }
+        #text{
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button id="btn"> Button clicked</button>
+        <div id="text">Click the button for change in text</div>
+    </div>
+    <script>
+        let arr =["how are you","what is your name",
+        "why should we hire","what are your strenghrts",
+        "what is your favourite place","Lorem ipsum dolor sit",
+         "amet consectetur adipisicing elit. Possimus doloribus fugit eaque pariatur eveniet.",
+         " Voluptatum ipsa voluptas eligendi ab quo."];
+        
+        let bttn = document.getElementById("btn");
+        bttn.addEventListener('click', () => {
+            const index = Math.floor(Math.random() * arr.length);
+            const word = arr[index];
+            document.getElementById("text").innerHTML = word;
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Text Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .text-display {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="randomTextButton">Click Me</button>
+        <div class="text-display" id="textDisplay"></div>
+    </div>
+
+    <script>
+        const textArray = [
+            "Hello, World!",
+            "Welcome to JavaScript!",
+            "Coding is fun!",
+            "Have a great day!",
+            "Keep learning new things!",
+            "JavaScript is powerful!"
+        ];
+
+        document.getElementById("randomTextButton").addEventListener("click", function() {
+            const randomIndex = Math.floor(Math.random() * textArray.length);
+            const randomText = textArray[randomIndex];
+            document.getElementById("textDisplay").innerText = randomText;
+        });
+    </script>
+</body>
+</html> -->

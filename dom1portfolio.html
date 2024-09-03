@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Arun Kumar Reddy Rakasi</title>
+</head>
+<body>
+    <script>
+        // Create and style page title
+        const pageTitle = document.createElement('h1');
+        pageTitle.innerHTML = "Resume";
+        pageTitle.style.fontSize = "50px";
+        pageTitle.style.color = "maroon";
+        pageTitle.style.textAlign = "center";
+        pageTitle.style.marginBottom = "20px";
+
+        // Create and style main container
+        const container = document.createElement("div");
+        container.style.maxWidth = "100%";
+        container.style.width = "100%";
+        container.style.height = "100vh";
+        container.style.boxSizing = "border-box";
+        container.style.padding = "20px";
+        container.style.background = "#fff";
+        container.style.borderRadius = "10px";
+        container.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        container.style.fontFamily = "Arial, sans-serif";
+        container.style.lineHeight = "1.6";
+
+        // Create and style contact information section
+        const contactInfo = document.createElement('div');
+        contactInfo.innerHTML = `
+            <h2>Contact Information</h2>
+            <p>Mobile: <strong>+91 6309708105</strong></p>
+            <p>Email: <a href="mailto:rarunreddy2002@gmail.com">rarunreddy2002@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/arun-kumar-reddy-rakasi-314385256" target="_blank">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/rakasiarunkumarreddy" target="_blank">GitHub Profile</a></p>
+        `;
+        contactInfo.style.marginBottom = "20px";
+        contactInfo.style.fontSize = "50px";
+        contactInfo.style.color = "#333";
+
+        // Create and style profile summary section
+        const profileSummary = document.createElement('div');
+        profileSummary.innerHTML = `
+            <h2>Profile Summary</h2>
+            <p>Eager-to-learn fresher with a growing foundation in JavaScript, HTML, CSS, and React, actively expanding my knowledge in Agile methodologies and collaborative software development. I am learning to architect and implement clean, responsive user interfaces while integrating REST APIs and exploring frameworks like Vue.js. Currently focused on troubleshooting and debugging application issues, optimizing front-end performance, and understanding the infrastructure of fast-growing fintech products. Gaining experience with CSS preprocessors like LESS and developing skills in analytical problem-solving and RESTful API integration. Committed to mastering these skills to excel in a dynamic, team-oriented environment.</p>
+        `;
+        profileSummary.style.marginBottom = "20px";
+        profileSummary.style.fontSize = "50px";
+        profileSummary.style.color = "#333";
+
+        // Create and style education section
+        const education = document.createElement('div');
+        education.innerHTML = `
+            <h2>Education</h2>
+            <p><strong>Vignana Bharathi Institute of Technology, Aushapur</strong><br>
+            Bachelor of Technology (Information Technology) CGPA: 8.43<br>
+            2020-2024</p>
+        `;
+        education.style.marginBottom = "20px";
+        education.style.fontSize = "50px";
+        education.style.color = "#333";
+
+        // Create and style projects section
+        const projects = document.createElement('div');
+        projects.innerHTML = `
+            <h2>Projects</h2>
+            <div>
+                <h3>AI Based Scarecrow</h3>
+                <ul>
+                    <li>Developed a real-time animal detection system to enhance wildlife management, covering 2 square miles of protected land.</li>
+                    <li>Achieved a 95% detection rate, significantly improving the monitoring of animal intrusions.</li>
+                    <li>Reduced animal intrusions by 40% through automated sound alerts that scare them away.</li>
+                    <li>Increased the accuracy of response measures by 25% with the implementation of sound-based alerts.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Stateful Restaurant Cards with React</h3>
+                <ul>
+                    <li>Created a responsive website using React.js, JavaScript, HTML, and CSS. Improved the layout with a clear Header, Body, and Footer, which increased user satisfaction by 25%.</li>
+                    <li>Reduced page load time by 40%, which led to a 30% rise in user engagement and a 20% boost in overall website performance.</li>
+                    <li>Used useState and useEffect hooks to manage state and update in real-time, cutting website crashes by 15% and making the user experience smoother.</li>
+                    <li>Enhanced website performance by applying React.js best practices, achieving a 35% faster load time and a 20% increase in user retention, resulting in a more responsive and user-friendly interface.</li>
+                </ul>
+            </div>
+        `;
+        projects.style.marginBottom = "20px";
+        projects.style.fontSize = "50px";
+        projects.style.color = "#333";
+
+        // Create and style skills section
+        const skills = document.createElement('div');
+        skills.innerHTML = `
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: JavaScript (ES6+)</li>
+                <li>Web Development: HTML5, CSS3, React</li>
+                <li>Framework: Bootstrap</li>
+                <li>Database: SQL</li>
+                <li>Developer Tools: Jupyter Notebook, VS Code, Git, GitHub</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Flexibility</li>
+                <li>Creativity and Innovation</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Problem Solving</li>
+            </ul>
+        `;
+        skills.style.marginBottom = "20px";
+        skills.style.fontSize = "50px";
+        skills.style.color = "#333";
+
+        // Create and style certifications section
+        const certifications = document.createElement('div');
+        certifications.innerHTML = `
+            <h2>Certifications</h2>
+            <ul>
+                <li>Infosys The Complete Web Developer Course 2.0</li>
+                <li>Infosys HTML CSS and JavaScript for Beginners - A Web Design Course</li>
+            </ul>
+        `;
+        certifications.style.marginBottom = "20px";
+        certifications.style.fontSize = "50px";
+        certifications.style.color = "#333";
+
+        // Create and style participation section
+        const participation = document.createElement('div');
+        participation.innerHTML = `
+            <h2>Participation</h2>
+            <ul>
+                <li>Collaborated in the Tech Fiesta Hackathon 2023, developing innovative solutions with a team of 5.</li>
+                <li>Attended a .NET Workshop, acquiring practical skills in .NET technologies.</li>
+            </ul>
+        `;
+        participation.style.marginBottom = "20px";
+        participation.style.fontSize = "50px";
+        participation.style.color = "#333";
+
+        // Append all sections to the container
+        container.appendChild(contactInfo);
+        container.appendChild(profileSummary);
+        container.appendChild(education);
+        container.appendChild(projects);
+        container.appendChild(skills);
+        container.appendChild(certifications);
+        container.appendChild(participation);
+
+        // Append the title and container to the body
+        document.body.appendChild(pageTitle);
+        document.body.appendChild(container);
+    </script>
+</body>
+</html>

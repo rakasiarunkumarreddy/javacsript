@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random otp</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 90px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 90px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button onclick="generateRandomOtp()">Generate Random Otp</button>
+    </div>
+    <script>
+        const name=document.createElement("h1")
+
+
+
+        function generateRandomOtp() {
+            const randomNumber=Math.floor(Math.random()*100000)+1 ;
+            const randomColor=`#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+            document.getElementById('otp').innerHTML = randomNumber;
+            document.body.style.backgroundColor = randomColor;
+            name.
+
+
+            console.log(randomNumber);
+            console.log(randomColor);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Explanation
+function generateRandomNumber() {:
+
+Imagine you're building a little machine (a function) that can do something special when you ask it to. This machine is called generateRandomNumber.
+Everything inside the { } curly brackets is the set of instructions that this machine will follow whenever you tell it to start.
+const randomNumber = Math.floor(Math.random() * 100) + 1;:
+
+Let's break this down:
+Math.random(): Imagine you have a dice, but instead of numbers from 1 to 6, it gives you a number between 0 and 1, like 0.123 or 0.987. This is what Math.random() does—it rolls a dice and gives you a random number between 0 and 1.
+Math.random() * 100: Now, if you want the number to be between 0 and 100 instead of between 0 and 1, you multiply it by 100. So, if you got 0.5 from Math.random(), now it becomes 50.
+Math.floor(): When you multiply by 100, you might get a number like 23.56. But we don't want the decimal part, so we use Math.floor() to round it down to the nearest whole number, like 23.
++ 1: Finally, we add 1 to make sure the number is between 1 and 100, instead of between 0 and 99.
+The final result is a whole number between 1 and 100, and we store this number in a box (or variable) called randomNumber.
+const randomColor = \#${Math.floor(Math.random() * 16777215).toString(16)}`;`:
+
+This line is like magic that creates a random color:
+Math.random() * 16777215: Just like before, we get a random number. But this time, we multiply by a very big number (16,777,215) because that’s the biggest number we can use to make a color code.
+Math.floor(): Again, we get rid of any decimal part to make it a whole number.
+.toString(16): Computers think in a special way called hexadecimal, which is like using a different alphabet to write numbers. This turns our big number into a color code.
+#${...}: We put a # at the front to make it look like a color code (like #FF5733), which is what computers use to decide what color to show.
+We store this color code in a box (variable) called randomColor.
+document.getElementById('random-number').textContent = \Random Number: ${randomNumber}`;`:
+
+Think of the document as the blueprint of your webpage. When you want to change something on the page, you look at this blueprint.
+getElementById('random-number'): Imagine your webpage is a big room, and you’ve labeled one part of it with a name tag that says "random-number." This line is like pointing to that part of the room.
+**.textContent = \Random Number: ${randomNumber}`**: You are telling that part of the room to display a message. The message will be something like "Random Number: 42" (where 42` is the random number you just created).
+document.body.style.backgroundColor = randomColor;:
+
+Now, we’re saying, "Hey, let's paint the walls of our room with this random color."
+document.body: This is like pointing to the whole room (the webpage).
+style.backgroundColor: This is like saying, "Let’s change the wall color."
+= randomColor: Finally, we use the color we created earlier to paint the walls.
+console.log("Generated Random Number:", randomNumber);:
+
+Imagine you have a notebook where you write down important things to remember or share with others. The console.log is like writing something in that notebook.
+Here, we're writing down "Generated Random Number:" followed by the actual number, so you can see it later in your notebook (which in this case is the console in your browser).
+console.log("Generated Background Color:", randomColor);:
+
+Just like the previous line, this one writes down the color code in the notebook so you can check what color was chosen every time you click the button.
+So, when you click the button, this little machine (the function) does all these steps: it rolls a dice for a number, mixes paint for a color, updates the display on the page, paints the walls, and then writes everything down in its notebook (the console). -->

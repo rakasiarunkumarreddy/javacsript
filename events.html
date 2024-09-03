@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">here</button>
+    <p id="id"></p>
+    <script>
+      
+
+    
+     
+
+        const bttn=document.getElementById("btn")
+        
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+      
+
+
+        bttn.addEventListener('click',()=>{
+            document.body.style.backgroundColor=getRandomColor()
+        })
+
+       
+
+    </script>
+</body>
+</html>

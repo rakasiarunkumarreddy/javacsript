@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div=document.createElement('div')
+        div.style.marginTop="150px"
+
+        
+        let div1=document.createElement("div")
+        div1.style.fontSize="50px"
+        div1.style.textAlign="center"
+
+
+        let name=document.createElement("h1")
+        name.innerHTML="Arun Kumar Reddy Rakasi"
+        
+        const address=document.createElement("h1")
+        address.innerHTML="1-22,Chakalpalle,Wanaparthy,Telangana"
+        address.style.fontSize="50px"
+        
+
+        
+        div1.appendChild(name)
+        div1.appendChild(address)
+
+        div.appendChild(div1)
+
+        document.body.appendChild(div)
+    </script>
+</body>
+</html>
